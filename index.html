@@ -1,80 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Euticus portifolio</title>
-   
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  
-  <body>
- 
-     <div class="sidebars">
-      <h2>Menu</h2>
-      <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Euticus Kamau | Software Developer portfolio. Explore projects in AI, web development, networking, automation and software engineering.">
+  <meta name="author" content="Euticus Kamau">
+  <meta name="theme-color" content="#0b1020">
+  <title>Euticus Kamau | Software Developer</title>
 
-       </div>
-    <div class="content">
-    <div class="header">
-      <h1>Welcome to Euticus Portfolio</h1>
-      <p>Front-End Web Developer</p>
-    </div>
-    
-      <section id="home">
-      <p>Hi, I'm Euticus 👋<br>I build clean, responsive and mordern websites using HTML, CSS and JavaScript.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </section>
-    <section id="about">
-      <h1>About Me</h1>
-      <p>I am a passionate web developer focused on building user-friendly and responsive websites. I enjoy solving problems and learning new technologies.</p>
-    </section>
-    <section id="skills">
-      <h1>Skills</h1>
-      <p>✔HTML<br>
-         ✔CSS<br>
-         ✔JavaScript<br>
-         ✔ Responsive Design<br>
-         ✔ Git</p> 
-    </section>
-    <section id="services">
-      <h1>Services</h1>
-      <p>I offer</p>
-      <p>✔Web Design<br>
-         ✔Front-End Web Development<br>
-         ✔UI/UX Improvements 
-      </p>
-    </section>
-    <section id="projects">
-      <div class="projects">
-      <h1>Projects</h1>
-      <p>Here are some of my works:</p>
-      <a href="https://physicusintron6.github.io/Personal-portfolio" target="_blank">Personal Portfolio</a><br>
-       <a href="https://physicusintron6.github.io/Personal-portfolio" target="_blank"><img src="https://i.ibb.co/TDMSnC0n/portfolio-image.png" style="height:200px; width:300px;"></a><br>
-      <a href="https://physicusintron6.github.io/PIntro-AI-Powered-Personal-Introductions/">PIntro-AI Introduction Generator</a><br>
-       <a href="https://physicusintron6.github.io/PIntro-AI-Powered-Personal-Introductions/" target="_blank"><img src="https://i.ibb.co/rGHqRjwG/landing-page.png" alt="PIntro-AI" style="height:200px; width: 300px;"></a><br>
-      <a href="project3.html">Project 3</a><br>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Euticus Kamau home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Euticus<span class="brand-accent">Dev</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Software Developer • Kenya</p>
+
+          <h1>Building software that turns <span class="gradient-text">ideas into systems.</span></h1>
+
+          <p class="hero-description">
+            I'm <strong>Euticus Kamau</strong>, a Computer Science student and software developer
+            focused on building practical web applications, AI-powered tools, automation and
+            network-aware systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+            <a href="mailto:euticus.dev@gmail.com" class="btn btn-secondary">Let's Talk</a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/euticusdev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/euticus-kamau-9377a3433" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:euticus.dev@gmail.com">Email ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <small>euticus@dev:~</small>
+            </div>
+            <div class="terminal-body">
+              <p><span class="terminal-prompt">$</span> whoami</p>
+              <p class="terminal-output">Euticus Kamau</p>
+              <p><span class="terminal-prompt">$</span> role</p>
+              <p class="terminal-output">Software Developer</p>
+              <p><span class="terminal-prompt">$</span> focus</p>
+              <p class="terminal-output">Web • AI • APIs • Systems</p>
+              <p><span class="terminal-prompt">$</span> status</p>
+              <p class="terminal-output success">● Building & learning</p>
+              <span class="cursor"></span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <br>
-      <a href="#" class="btn" target="_blank">View More</a>
-      </section>
+      <div class="container hero-stats reveal">
+        <div class="stat"><strong>5+</strong><span>Projects</span></div>
+        <div class="stat"><strong>2029</strong><span>Expected Graduation</span></div>
+        <div class="stat"><strong>CS</strong><span>Academic Focus</span></div>
+        <div class="stat"><strong>∞</strong><span>Things to Build</span></div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:physicusintron@outlook.com">physicusintron@outlook.com</a></p>
-        <p>Phone: +254720470681</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/euticus">Euticus</a></p>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / About</p>
+          <h2>A developer who likes building <span class="gradient-text">real things.</span></h2>
+        </div>
 
-        <a href="mailto:physicusintron@outlook.com" class="btn">Hire Me</a>
-      </section>
+        <div class="about-content reveal">
+          <p>
+            I'm a Computer Science student at <strong>Murang'a University of Technology</strong>
+            with a strong interest in software development and practical problem solving.
+          </p>
+          <p>
+            I enjoy taking an idea from a rough concept to a working system. My projects span
+            AI-powered applications, web development, APIs, networking, automation and
+            client-server systems.
+          </p>
+          <p>
+            My approach is simple: <strong>build, learn, test, document, improve.</strong>
+            Every project is an opportunity to understand the technology underneath it, not
+            just make the interface look good.
+          </p>
+
+          <div class="about-pills">
+            <span>Problem Solving</span>
+            <span>Continuous Learning</span>
+            <span>Software Engineering</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">02 / Skills</p>
+          <h2>My technical toolbox</h2>
+          <p>Technologies and areas I use while building and learning.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>Building responsive interfaces and web applications with clean, maintainable code.</p>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">{ }</div>
+            <h3>Programming</h3>
+            <p>Learning and applying programming concepts through projects and problem solving.</p>
+            <div class="tags">
+              <span>PHP</span><span>Python</span><span>JavaScript</span><span>C</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">AI</div>
+            <h3>AI & APIs</h3>
+            <p>Experimenting with AI models, APIs and conversational applications.</p>
+            <div class="tags">
+              <span>OpenAI API</span><span>Ollama</span><span>Qwen</span><span>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">↯</div>
+            <h3>Systems & Networking</h3>
+            <p>Working with local development environments, networking concepts and connected systems.</p>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>MikroTik</span><span>MariaDB</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <div class="section-heading">
+            <p class="eyebrow">03 / Projects</p>
+            <h2>Things I've been building.</h2>
+            <p>Selected projects that show how I learn by turning ideas into working software.</p>
+          </div>
+          <a class="text-link" href="https://github.com/euticusdev" target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-top">
+              <span class="project-type">AI APPLICATION</span>
+              <span class="project-status">Live Demo</span>
+            </div>
+            <h3>PIntro</h3>
+            <p class="project-subtitle">AI-Powered Personal Introduction Generator</p>
+            <p>
+              A web application designed to help users generate polished personal introductions
+              with the assistance of AI. The project explores user input, prompt-driven generation
+              and a clean interactive web experience.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/euticusdev/PIntro-AI-Powered-Personal-Introductions" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://euticusdev.github.io/PIntro-AI-Powered-Personal-Introductions/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-top">
+              <span class="project-type">AI + API</span>
+              <span class="project-status">In Development</span>
+            </div>
+            <h3>WhatsApp AI</h3>
+            <p class="project-subtitle">PHP-powered WhatsApp AI chatbot</p>
+            <p>
+              A PHP project integrating WhatsApp Business messaging with an AI service.
+              It explores webhooks, API authentication, environment configuration and automated
+              message responses.
+            </p>
+            <div class="tags">
+              <span>PHP</span><span>OpenAI API</span><span>WhatsApp API</span><span>Composer</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/euticusdev/whatsapp-ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-top">
+              <span class="project-type">NETWORKING</span>
+              <span class="project-status">In Development</span>
+            </div>
+            <h3>Caribbean WiFi</h3>
+            <p class="project-subtitle">Hotspot billing and access management system</p>
+            <p>
+              A PHP-based hotspot management project exploring customer accounts, packages,
+              payments, MikroTik integration and device-based internet authorization.
+            </p>
+            <div class="tags">
+              <span>PHP</span><span>MariaDB</span><span>MikroTik</span><span>M-Pesa</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/euticusdev/CaribbeanWifi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">04</div>
+            <div class="project-top">
+              <span class="project-type">SOFTWARE / NETWORKING</span>
+              <span class="project-status">In Development</span>
+            </div>
+            <h3>Android Remote Control</h3>
+            <p class="project-subtitle">Exploring phone-to-computer connectivity</p>
+            <p>
+              An experimental project exploring how an Android device can communicate with a
+              computer over a network using a custom client-server architecture.
+            </p>
+            <div class="tags">
+              <span>PHP</span><span>WebSockets</span><span>Android</span><span>Networking</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/euticusdev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">05</div>
+            <div class="project-top">
+              <span class="project-type">WEB</span>
+              <span class="project-status">Portfolio</span>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p class="project-subtitle">My developer portfolio</p>
+            <p>
+              A responsive personal website for presenting my projects, technical skills,
+              education, experience, certifications and professional contact information.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/euticusdev/Personal-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Experience</p>
+          <h2>Experience beyond the classroom.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">April – September</div>
+            <div class="timeline-card">
+              <span class="project-type">IT / NETWORKING</span>
+              <h3>Network Manager & IT Expert</h3>
+              <h4>Caribbean Investment Company · Witeithie, Thika</h4>
+              <p>
+                Worked with networking and IT operations during the university holiday period,
+                gaining practical experience with computer systems, connectivity and technical
+                problem solving.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 / Education</p>
+          <h2>Learning the foundations, then building on them.</h2>
+        </div>
+
+        <div class="education-list reveal">
+          <article class="education-card">
+            <div class="education-icon">🎓</div>
+            <div>
+              <span class="education-period">2025 – 2029</span>
+              <h3>BSc Computer Science</h3>
+              <p>Murang'a University of Technology</p>
+              <span class="education-detail">Current: Second Year, First Semester</span>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-icon">📘</div>
+            <div>
+              <span class="education-period">Secondary Education</span>
+              <h3>KCSE · B+</h3>
+              <p>St. John School Kanunga</p>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-icon">💻</div>
+            <div>
+              <span class="education-period">2025</span>
+              <h3>Computer Packages</h3>
+              <p>Petanns Driving School & Computer College</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">06 / Certifications</p>
+          <h2>Proof of continuous learning.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-icon">◈</div>
+            <div>
+              <span>Cisco Networking Academy · 2026</span>
+              <h3>Introduction to Cyber Security</h3>
+              <p>Course completion certificate covering foundational cybersecurity concepts.</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-icon">✓</div>
+            <div>
+              <span>Petanns · 2025</span>
+              <h3>Computer Packages</h3>
+              <p>Certificate covering essential computer application skills.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="cert-note reveal">More certifications will be added as I continue learning and building.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box reveal">
+        <div>
+          <p class="eyebrow">07 / Contact</p>
+          <h2>Have an idea worth building?</h2>
+          <p>
+            Whether it's a software project, collaboration, internship opportunity or a technical
+            conversation, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:euticus.dev@gmail.com" class="btn btn-primary">Email Me ↗</a>
+          <a href="https://github.com/euticusdev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/euticus-kamau-9377a3433" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Euticus<span class="brand-accent">Dev</span></span>
+      </a>
+      <p>© <span id="year"></span> Euticus Kamau. Built with HTML, CSS & JavaScript.</p>
+      <a href="#top" class="back-top" aria-label="Back to top">↑</a>
     </div>
-  </body> 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
